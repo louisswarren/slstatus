@@ -231,7 +231,7 @@ temp(const char *file)
     fclose(fp);
 
     /* return temperature in degrees */
-    return smprintf("%d°C", temperature / 1000);
+    return smprintf("%d%cC", temperature / 1000, 0x00B0);
 }
 
 
